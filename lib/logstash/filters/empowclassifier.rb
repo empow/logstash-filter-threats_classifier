@@ -100,8 +100,8 @@ class LogStash::Filters::EmpowClassifier < LogStash::Filters::Base
   ###############
   config :tag_on_product_type_failure, :validate => :array, :default => ['_empow_no_product_type']
   config :tag_on_signature_failure, :validate => :array, :default => ['_empow_no_signature']
-  config :tag_on_timeout, :validate => :array, :default => ['_empow_classifer_timeout']
-  config :tag_on_error, :validate => :array, :default => ['_empow_classifer_error']
+  config :tag_on_timeout, :validate => :array, :default => ['_empow_classifier_timeout']
+  config :tag_on_error, :validate => :array, :default => ['_empow_classifier_error']
 
   CLASSIFICATION_URL = 'https://intent.cloud.empow.co'
   CACHE_TTL = (24*60*60)
