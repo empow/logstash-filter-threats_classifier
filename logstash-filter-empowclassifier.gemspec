@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'logstash-filter-empowclassifier'
-  s.version       = '1.0.0'
+  s.version       = '1.0.1'
   s.licenses      = ['Apache-2.0']
   s.summary       = 'Returns classification information for attacks from the empow classification center, based on information in log strings'
   #s.description   = 'Write a longer description or delete this line.'
