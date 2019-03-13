@@ -44,7 +44,7 @@ module LogStash
           if @last_minute_failed_login_count < 3
             begin
               @token = @cognito_client.authenticate
-            rescue Aws::CognitoIdentityProvider::Errors::NotAuthorizedException, Aws::CognitoIdentityProvider::Errors::UserNotFoundException => e
+            rescue Aws::CognitoIdentityProvider::Errors::NotAuthorizedException, Aws::CognitoIdentityProvider::Errors::UserNotFoundException, Aws::CognitoIdentityProvider::Errors::UserNotConfirmedException => e
               @logger.warn("unable to authenticate with classification center", :error => e)
               @last_authentication_error = e.to_s
               inc_unsuccessful_logins()
