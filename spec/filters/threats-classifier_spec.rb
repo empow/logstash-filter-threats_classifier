@@ -1,9 +1,9 @@
 # encoding: utf-8
 require_relative '../spec_helper'
-require "logstash/filters/empowclassifier"
+require "logstash/filters/threats-classifier"
 require "logstash/event"
 
-describe LogStash::Filters::EmpowClassifier do
+describe LogStash::Filters::ThreatSClassifier do
 
   before(:each) do
     allow(LogStash::Filters::Empow::LocalClassifier).to receive(:new).and_return(nil)

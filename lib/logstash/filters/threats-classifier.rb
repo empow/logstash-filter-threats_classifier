@@ -10,9 +10,9 @@ require_relative "plugin-logic"
 require_relative "utils"
 
 #
-class LogStash::Filters::EmpowClassifier < LogStash::Filters::Base
+class LogStash::Filters::ThreatsClassifier < LogStash::Filters::Base
 
-  config_name "empowclassifier"
+  config_name "threats-classifier"
 
   # The username (typically your email address), to access the classification center
   config :username, :validate => :string, :required => true
