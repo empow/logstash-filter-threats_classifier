@@ -3,7 +3,7 @@ require_relative '../spec_helper'
 require "logstash/filters/threats_classifier"
 require "logstash/event"
 
-describe LogStash::Filters::ThreatsClassifier do
+describe LogStash::Filters::Threats_Classifier do
 
   before(:each) do
     allow(LogStash::Filters::Empow::LocalClassifier).to receive(:new).and_return(nil)

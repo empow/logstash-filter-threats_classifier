@@ -10,7 +10,7 @@ require_relative "plugin-logic"
 require_relative "utils"
 
 #
-class LogStash::Filters::ThreatsClassifier < LogStash::Filters::Base
+class LogStash::Filters::Threats_Classifier < LogStash::Filters::Base
 
   config_name "threats_classifier"
 
