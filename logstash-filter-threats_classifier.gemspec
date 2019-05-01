@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name          = 'logstash-filter-threats-classifier'
+  s.name          = 'logstash-filter-threats_classifier'
   s.version       = '1.0.2'
   s.licenses      = ['Apache-2.0']
   s.summary       = 'Returns classification information for attacks from the empow classification center, based on information in log strings'
