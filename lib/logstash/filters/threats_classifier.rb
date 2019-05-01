@@ -51,7 +51,7 @@ class LogStash::Filters::Threats_Classifier < LogStash::Filters::Base
   # Example: If the log used log_type for the product type, configure the plugin like this:
   # [source,ruby]
   #    filter {
-  #      empowclassifier {
+  #      threats_classifier {
   #        username => "happy"
   #        password => "festivus"
   #        product_type_field => "log_type"
@@ -63,7 +63,7 @@ class LogStash::Filters::Threats_Classifier < LogStash::Filters::Base
   # Example: If the log used product for the product name, configure the plugin like this:
   # [source,ruby]
   #    filter {
-  #      empowclassifier {
+  #      threats_classifier {
   #        username => "happy"
   #        password => "festivus"
   #        product_name_field => "product"

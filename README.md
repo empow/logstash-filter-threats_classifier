@@ -4,9 +4,9 @@ This is a plugin for [Logstash](https://github.com/elastic/logstash).
 
 It is fully free and fully open source. The license is Apache 2.0, meaning you are pretty much free to use it however you want in whatever way.
 
-<a href="https://badge.fury.io/rb/logstash-filter-empowclassifier"><img src="https://badge.fury.io/rb/logstash-filter-empowclassifier.svg" alt="Gem Version" height="18"></a>
+<a href="https://badge.fury.io/rb/logstash-filter-threats_classifier"><img src="https://badge.fury.io/rb/logstash-filter-threats_classifier.svg" alt="Gem Version" height="18"></a>
 
-# Using the empowclassifier plugin
+# Using the threats classifier plugin
 
 ## Example
 A log may look like this before the classification (in json form):
@@ -36,7 +36,7 @@ each result contains the actual tactic, the attack stage empow classified for th
 
 ## Installing the plugin
 ```sh
-bin/logstash-plugin install logstash-filter-empowclassifier
+bin/logstash-plugin install logstash-filter-threats_classifier
 ```
 
 ## Usage
@@ -46,7 +46,7 @@ input {
 }
 
 filter {
-  empowclassifier {
+  threats_classifier {
     username => "cosmo@kramerica.com"
     password => "12345"
   }
