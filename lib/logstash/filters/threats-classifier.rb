@@ -12,7 +12,7 @@ require_relative "utils"
 #
 class LogStash::Filters::ThreatsClassifier < LogStash::Filters::Base
 
-  config_name "threats-classifier"
+  config_name "threats_classifier"
 
   # The username (typically your email address), to access the classification center
   config :username, :validate => :string, :required => true
